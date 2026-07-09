@@ -15,7 +15,7 @@ Ensure public repo content remains clean-room and does not expose private ACS sy
 6. Verify public docs separate working features from planned features.
 
 ## Boundaries
-- Do not copy private AetherCore, private ACSCrew, CAILEAN, Ailee, client, WireGuard, Telegram, Gmail, Calendar, or Pi executor internals.
+- Do not copy private private systems, private private prototypes, private agents, private interfaces, client, private network configuration, private messaging integrations, private productivity integrations, private productivity integrations, or private executor integrations internals.
 - Do not include real hostnames, tokens, keys, private paths, or client names.
 - Do not publish generated local runtime state unless sanitized.
 

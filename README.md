@@ -18,7 +18,7 @@ AethosCore is the public visual Agent OS foundation and J-space UI. Socrates pro
 
 ## Relationship to private ACS systems
 
-Socrates is public and clean-room. It does not include private AetherCore, CAILEAN, Ailee, ACSCrew, client data, secrets, WireGuard, Telegram, Gmail, Calendar, or Pi executor internals.
+Socrates is public and clean-room. It does not include private private systems, private agents, private interfaces, private prototypes, client data, secrets, private network configuration, private messaging integrations, private productivity integrations, private productivity integrations, or private executor integrations internals.
 
 Private ACS systems may inspire the philosophy, but this repo must stand alone.
 

@@ -5,7 +5,7 @@ Socrates is public-safe by design.
 ## Default boundaries
 
 - Do not commit `.env` files.
-- Do not include API keys, tokens, private URLs, client data, infrastructure maps, WireGuard configs, Telegram bot tokens, Gmail/Calendar tokens, or private AetherCore material.
+- Do not include API keys, tokens, private URLs, client data, infrastructure maps, private network configuration configs, private messaging integrations bot tokens, private productivity integrations/private productivity integrations tokens, or private private systems material.
 - Do not claim production deployment support unless it is explicitly implemented and documented.
 - Do not expose hidden chain-of-thought. Socrates records declared operational state only.
 

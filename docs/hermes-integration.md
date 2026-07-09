@@ -22,7 +22,7 @@ Hermes is treated as a learning and memory companion, not a reckless executor.
 ## Hermes should not do
 
 - ask for secrets
-- copy private AetherCore internals
+- copy private private systems internals
 - mutate production
 - overclaim functionality
 - make private ACS assumptions

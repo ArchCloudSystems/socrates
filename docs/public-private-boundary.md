@@ -2,7 +2,7 @@
 
 Socrates is public and clean-room.
 
-Private inspirations may include AetherCore, ACSCrew, Ailee, CAILEAN, and internal ACS workflows, but this repo must not include their private source code, credentials, infrastructure details, or client context.
+Private inspirations may include private systems, private prototypes, private interfaces, private agents, and internal ACS workflows, but this repo must not include their private source code, credentials, infrastructure details, or client context.
 
 Public language should say:
 
