@@ -1,40 +1,29 @@
----
-id: public-boundary-review
-confidence: draft
----
-
 # Skill: Public Boundary Review
 
 ## Trigger
-
-Use before publishing, committing, or documenting public Socrates/AethosCore work.
+Use before committing or publishing public Socrates or AethosCore material.
 
 ## Purpose
-
-Ensure public repos do not expose private ACS infrastructure, client context, secrets, or private system internals.
+Ensure public repo content remains clean-room and does not expose private ACS systems, client data, secrets, credentials, or infrastructure details.
 
 ## Steps
-
-1. Review changed files.
-2. Search for API keys, tokens, private URLs, client names, and private infrastructure details.
-3. Check README and docs for overclaims.
-4. Confirm private systems are referenced only as inspiration, not dependency.
-5. Record findings in the receipt.
+1. Inspect .env.example and confirm it contains placeholders only.
+2. Confirm .env, real tokens, credentials, and private config files are ignored.
+3. Scan committed and staged files for obvious secret patterns.
+4. Scan for private ACS references that should not be in the public repo.
+5. Confirm generated runtime receipts and Hermes review prompts are ignored unless intentionally sanitized as examples.
+6. Verify public docs separate working features from planned features.
 
 ## Boundaries
-
-- Do not read or print `.env` values.
-- Do not import private AetherCore source.
-- Do not publish private receipts.
+- Do not copy private AetherCore, private ACSCrew, CAILEAN, Ailee, client, WireGuard, Telegram, Gmail, Calendar, or Pi executor internals.
+- Do not include real hostnames, tokens, keys, private paths, or client names.
+- Do not publish generated local runtime state unless sanitized.
 
 ## Verification
-
-- `pnpm build`
-- grep token checks
-- manual docs review
+Run a Git status check, a secret-pattern scan, and a private-reference scan before public release.
 
 ## Failure Modes
-
-- Future features written as current features.
-- Private ACS terms appearing without boundary explanation.
-- Example data accidentally copied from private work.
+- .env.example contains real values.
+- Runtime receipts contain private paths or secrets.
+- Public docs reference private system internals as required.
+- Public repo includes generated private review prompts.
