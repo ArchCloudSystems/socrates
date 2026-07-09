@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://archcloudsystems.com/schemas/socrates/skill.schema.json",
+  "title": "Socrates Skill",
+  "type": "object",
+  "required": ["id", "title", "trigger", "steps", "boundaries", "verification", "confidence"],
+  "properties": {
+    "id": { "type": "string" },
+    "title": { "type": "string" },
+    "trigger": { "type": "string" },
+    "purpose": { "type": "string" },
+    "steps": { "type": "array", "items": { "type": "string" } },
+    "boundaries": { "type": "array", "items": { "type": "string" } },
+    "verification": { "type": "array", "items": { "type": "string" } },
+    "failureModes": { "type": "array", "items": { "type": "string" } },
+    "confidence": { "type": "string", "enum": ["draft", "tested", "trusted"] }
+  }
+}

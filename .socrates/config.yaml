@@ -1,0 +1,8 @@
+project:
+  name: socrates
+workflow:
+  default_mode: propose
+  receipt_required: true
+hermes:
+  enabled: true
+  mode: companion

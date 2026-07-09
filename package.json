@@ -1,0 +1,29 @@
+{
+  "name": "@archcloudsystems/socrates",
+  "version": "0.1.0-alpha.0",
+  "private": false,
+  "description": "Hermes-native, terminal-first workbench for governed, receipt-driven software work.",
+  "type": "module",
+  "bin": {
+    "socrates": "dist/cli/index.js"
+  },
+  "scripts": {
+    "dev": "tsx src/cli/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/cli/index.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "yaml": "^2.5.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.5",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

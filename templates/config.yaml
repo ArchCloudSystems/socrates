@@ -1,0 +1,21 @@
+project:
+  name: socrates-project
+
+workflow:
+  default_mode: propose
+  receipt_required: true
+  require_plan_before_write: true
+
+models:
+  planner:
+    provider: unset
+    model: unset
+  reviewer:
+    provider: hermes
+    model: configured-in-hermes
+
+hermes:
+  enabled: true
+  mode: companion
+  review_receipts: true
+  propose_skills: true

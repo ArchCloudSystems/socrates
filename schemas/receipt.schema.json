@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://archcloudsystems.com/schemas/socrates/receipt.schema.json",
+  "title": "Socrates Receipt",
+  "type": "object",
+  "required": ["runId", "task", "mode", "status", "createdAt", "summary", "verification", "hermesReview", "skillCandidates"],
+  "properties": {
+    "runId": { "type": "string" },
+    "task": { "type": "string" },
+    "mode": { "type": "string", "enum": ["read-only", "propose", "safe-write", "autopilot"] },
+    "status": { "type": "string", "enum": ["success", "failed", "partial", "blocked", "planned"] },
+    "createdAt": { "type": "string" },
+    "summary": { "type": "string" },
+    "observations": { "type": "array", "items": { "type": "string" } },
+    "plan": { "type": "array", "items": { "type": "string" } },
+    "files": { "type": "array", "items": { "type": "string" } },
+    "commands": { "type": "array", "items": { "type": "string" } },
+    "verification": { "type": "array", "items": { "type": "string" } },
+    "lessons": { "type": "array", "items": { "type": "string" } },
+    "hermesReview": {
+      "type": "object",
+      "properties": {
+        "status": { "type": "string" },
+        "promptPath": { "type": "string" },
+        "summary": { "type": "string" }
+      }
+    },
+    "skillCandidates": { "type": "array", "items": { "type": "string" } }
+  }
+}

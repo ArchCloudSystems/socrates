@@ -1,0 +1,23 @@
+mode: propose
+
+forbidden_paths:
+  - .env
+  - .env.*
+  - .git/**
+  - '**/secrets/**'
+  - '**/credentials/**'
+
+allowed_commands:
+  - git status
+  - git diff
+  - pnpm build
+  - pnpm typecheck
+  - pnpm test
+  - npm run build
+  - npm test
+
+deny_commands:
+  - sudo
+  - rm -rf
+  - git push --force
+  - docker system prune

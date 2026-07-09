@@ -1,0 +1,6 @@
+mode: propose
+forbidden_paths:
+  - .env
+  - .env.*
+  - .git/**
+  - '**/secrets/**'

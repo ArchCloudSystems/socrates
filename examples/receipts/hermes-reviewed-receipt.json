@@ -1,0 +1,30 @@
+{
+  "runId": "gate0-example",
+  "task": "Prepare Gate 0 public alpha",
+  "mode": "propose",
+  "status": "planned",
+  "createdAt": "2026-07-08T00:00:00.000Z",
+  "summary": "Socrates observed project state, produced a Gate 0 plan, and prepared a Hermes review prompt.",
+  "observations": [
+    "Public repo must remain clean-room.",
+    "AethosCore should visualize declared operational state only.",
+    "Hermes should propose skills from receipts, not act recklessly."
+  ],
+  "plan": [
+    "Validate build.",
+    "Generate receipt.",
+    "Ask Hermes to review receipt.",
+    "Import approved skills only.",
+    "Visualize receipt in AethosCore."
+  ],
+  "files": ["README.md", "docs/hermes-integration.md", "schemas/receipt.schema.json"],
+  "commands": ["pnpm build", "pnpm dev hermes review --last"],
+  "verification": ["Build should pass before Gate 0.", "Secret scan required before public."],
+  "lessons": ["Hermes is a companion learning layer, not a replacement for governance."],
+  "hermesReview": {
+    "status": "pending",
+    "promptPath": ".socrates/hermes/review-last.md",
+    "summary": "Hermes review prompt generated but not yet completed."
+  },
+  "skillCandidates": ["public-boundary-review", "receipt-truthfulness-review", "gate0-build-check"]
+}
